@@ -1,0 +1,156 @@
+body {
+	color: gold;
+	background-color: black;
+	font-family: "Droid Sans", sans-serif;
+	font-size: 100%;
+}
+
+a {
+	color: gold;
+}
+
+a:hover {
+	color: #ffee00;
+	text-shadow: 0 0 2px #ff0;
+}
+
+a:visited {
+	text-shadow: 0 0 2px #fff;
+}
+
+h1 {
+	font-size: 5em;
+	font-family: "Orbitron", monospace;
+}
+
+h1 > a:hover {
+	text-shadow: 0 0 5px #ff0;
+}
+
+#header {
+	margin-bottom: 40px;
+	margin-left: 5px;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#menu {
+	font-size: 0.9em;
+	position: relative;
+	width: auto;
+	margin-left: 60px;
+	margin-top: -5px;
+}
+
+#menu > ul {
+	list-style-type: none;
+}
+
+#menu > ul > li {
+	display: inline;
+}
+
+
+#content {
+	font-size: 0.875em;
+	text-align: justify;
+
+	margin: 0 32px;
+}
+
+.content_box {
+	border-width: 2px;
+	border-color: #555;
+	border-style: solid;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	padding: 1em;
+	margin-bottom: 32px;
+	line-height: 1.3em;
+}
+
+.content_box p {
+	margin-top: 0.5em;
+}
+
+.content_box p:first-child {
+	margin-top: 0;
+}
+
+h2 {
+	color: #eee;
+	font-family: "Metrophobic", sans-serif;
+	font-size: 1.5em;
+
+	display: inline-block;
+	height: 1em;
+	padding: 1px 18px 0 4px;
+	border-top-left-radius: 3px;
+	background: #555 url("tab-corner.svg") no-repeat right bottom;
+	vertical-align: bottom;
+}
+
+#footer {
+	color: black;
+	font-size: 0.9em;
+	text-shadow:
+		 0px  0px 1px #000,
+		 1px  0px 1px #666,
+		 0px  1px 1px #666,
+		-1px  0px 1px #666,
+		 0px -1px 1px #666;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.server_stats > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+}
+
+.server_stats > img:first-child {
+	margin-top: inherit;
+}
+
+#content_box_menu {
+	display: inline-block;
+	list-style-type: none;
+	margin-bottom: 4px;
+}
+
+#content_box_menu > li {
+	display: inline;
+	padding-bottom: 8px;
+}
+
+#content_box_menu a {
+	text-decoration: none;
+}
+
+h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.5em;
+	text-indent: 1.5em;
+	font-weight: bold;
+}
+
+.bib_link {
+	font-size: 75%;
+	text-decoration: none;
+	color: #807640;
+}
+
+.content_box li {
+	margin-left: 1.5em;
+	list-style: disc;
+}
+
+em {
+	font-style: italic;
+	color: #ff0;
+}
