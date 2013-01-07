@@ -1,23 +1,26 @@
 ---
 layout: default
+title: Blog Index
 ---
 
 <div id="content">
-	<h2>About</h2>
+	{% for post in site.posts limit:5 %}
+	<h2>{{ post.title }}</h2>
+	<ul id="content_box_menu">
+		<li>{{ post.date | date: %Y-%m-%d }}</li>
+		<li><a href="{{ post.url }}">Permalink</a></li>
+	</ul>
 	<div class="content_box">
-		<p>My name is Yuri Kunde Schlesner and I'm a 21-year old (as of 2012-04) student of Computer
-		Science and computers and programming enthusiast. Primary areas of interest are computer
-		graphics, game engines, game development and related areas, though I dabble into pretty much
-		anything.</p>
-
-		<p>Here you'll find some info about my projects, as well as info I think may be useful to me
-		or someone else. Perhaps in the future I'll also start writing a blog here. (Writing is good
-		for you!)</p>
+		{{ post.content }}
 	</div>
-	<h2>Contact Info</h2>
+	{% endfor %}
+
+	<h2>Blog Archive</h2>
 	<div class="content_box">
-		<p>You can contact me at: <a href="mailto:yuriks@yuriks.net">yuriks@yuriks.net</a>.
-		I also have a <a href="https://twitter.com/#!/yuriks">Twitter</a>, and you can usually find
-		me somewhere around <a href="irc://chat.freenode.net">Freenode</a> as <kbd>yuriks</kbd>.</p>
+		<ul>
+			{% for post in site.posts %}
+			<li>{{ post.date | date: %Y-%m-%d }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
 	</div>
 </div>
