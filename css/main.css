@@ -114,10 +114,15 @@ h2 {
 #content_box_menu > li {
 	display: inline;
 	padding-bottom: 8px;
+	margin-right: 1ex;
 }
 
 #content_box_menu a {
 	text-decoration: none;
+}
+
+#content_box_menu a:hover {
+	text-decoration: underline;
 }
 
 h3 {
