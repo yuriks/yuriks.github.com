@@ -4,6 +4,9 @@ layout: default
 
 <div id="content">
 	<h2>{{ page.title }}</h2>
+	<ul id="content_box_menu">
+		<li>{{ page.date | date_to_string }}</li>
+	</ul>
 	<div class="content_box">
 		{{ content }}
 	</div>
