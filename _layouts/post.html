@@ -5,12 +5,12 @@ layout: default
 <div id="content">
 	<h2>{{ page.title }}</h2>
 	<ul id="content_box_menu">
-		{% if page.prev %}
-		<li><a href="{{ page.prev.url }}">&laquo;</a></li>
+		{% if page.previous %}
+		<li><a href="{{ page.previous.url }}">&laquo;&laquo;</a></li>
 		{% endif %}
 		<li>{{ page.date | date: "%Y-%m-%d" }}</li>
 		{% if page.next %}
-		<li><a href="{{ page.next.url }}">&raquo;</a></li>
+		<li><a href="{{ page.next.url }}">&raquo;&raquo;</a></li>
 		{% endif %}
 	</ul>
 	<div class="content_box">
