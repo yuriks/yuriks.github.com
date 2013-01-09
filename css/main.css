@@ -156,3 +156,8 @@ em {
 	font-style: italic;
 	color: #ff0;
 }
+
+strong {
+	font-weight: bold;
+	color: #ff0;
+}
