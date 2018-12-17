@@ -1,25 +1,10 @@
----
-layout: default
----
-
-<div id="content">
-	{% for post in site.posts limit:5 %}
-	<h2>{{ post.title }}</h2>
-	<ul id="content_box_menu">
-		<li>{{ post.date | date: "%Y-%m-%d" }}</li>
-		<li><a href="{{ post.url }}">Permalink</a></li>
-	</ul>
-	<div class="content_box">
-		{{ post.content }}
-	</div>
-	{% endfor %}
-
-	<h2>Blog Archive</h2>
-	<div class="content_box">
-		<ul>
-			{% for post in site.posts %}
-			<li>{{ post.date | date: "%Y-%m-%d" }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>yuriks.net</title>
+	</head>
+	<body>
+		<p>There's nothing to see here. If you need to contact me, you can poke me on <a href="https://twitter.com/yuriks">Twitter</a> or send me an email at <tt><em>$me</em>@<em>$me</em>.net</tt>.
+	</body>
+</html>
